@@ -35,7 +35,7 @@ share: true
 
 插入一个关于类型系统的题外话之后我们会继续进入关于命名的讨论。
 
-##C和Objective-C中的类型
+## C和Objective-C中的类型
 
 我曾在这个博客上多次提过Objective-C是直接建立在C语言之上的，一个重要的原因是Objective-C和C语言共用一个类型系统，他们都要求标识符是全局唯一的。
 
@@ -80,11 +80,11 @@ static char * XXObject;//将“XXObject”重新定义为不同的符号
 
 >一个变量能重新调整一个已经存在的方法也是得益与C语言的类型系统（这个有点像一个变量能够隐藏它的隐藏功能）
 
-##前缀
+## 前缀
 
 在Objective-C应用中的所有类名都必须是全局唯一的。由于很多不同的框架中会有一些相似的功能，所以在名字上也可能会有重复（users， views， requests / responses 等等），所以[苹果官方文档](https://developer.apple.com/library/ios/documentation/cocoa/conceptual/ProgrammingWithObjectiveC/Conventions/Conventions.html)规定类名需要有2-3个字母作为前缀。
 
-###类前缀
+### 类前缀
 
 [苹果官方建议](https://developer.apple.com/library/ios/documentation/cocoa/conceptual/ProgrammingWithObjectiveC/Conventions/Conventions.html)两个字母作为前缀的类名是为官方的库和框架准备的，而对于作为第三方开发者的我们，官方建议使用3个或者更多的字母作为前缀去命名我们的类。
 
@@ -139,7 +139,7 @@ static char * XXObject;//将“XXObject”重新定义为不同的符号
     </tbody>
 </table>
 
-####第三方类前缀
+#### 第三方类前缀
 
 直到最近，由于[CocoaPods](http://cocoapods.org/)的出现和大量新的iOS开发者的涌现，开源代码的遍布，第三方代码在很大程度上对苹果和其余的Objective-C开发社区来说已经不是问题了。最近苹果官方的命名指南也发生了变化，它将三个字母作为前缀的建议只是做为一个习惯做法。
 
@@ -171,7 +171,7 @@ static char * XXObject;//将“XXObject”重新定义为不同的符号
 
 >对于那些针对特殊功能而写的第三方库的作者，可以考虑在下一次主要升级时使用[@compatibility_alias](http://nshipster.com/at-compiler-directives/)来为那些使用者们提供一个天衣无缝的转移路径。
 
-##方法前缀
+## 方法前缀
 
 不仅是类容易造成命名冲突，selectors也很容易造成命名冲突，甚至方法比类会有更多的问题。
 考虑一下这个category：
@@ -204,7 +204,7 @@ category的主要功能是通过语法糖将一些有用的功能包裹进原来
 
 > 继续添加“category 方法”到你的Tweetbot条款。有效期:一个星期
 
-###Swizzling
+### Swizzling
 
 在Swizzling时，方法名加前缀或者后缀也是非常有必要的，这个我在上周关于[swizzling](http://nshipster.com/method-swizzling/)的文章中提到过。
 
@@ -218,7 +218,7 @@ category的主要功能是通过语法糖将一些有用的功能包裹进原来
 }
 ```
 
-##我们真的需要命名空间么？
+## 我们真的需要命名空间么？
 
 在最近关于Objective-C替换、改造和重塑的讨论中，我可以明显地发现命名空间是未来的一个趋势。但是它到底给我们带来了什么呢？
 

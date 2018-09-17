@@ -1,7 +1,7 @@
 ---
 date: '2015-06-26'
 title: "我们真的一定要去改变世界么？"
-slug: We_really_have_to_change_the_world
+slug: we_really_have_to_change_the_world
 description: "生活最后还是要靠自己去判断。互联网是好的，也是坏的，在于我们如何去使用他。即使是坏的，我们也做不了任何改变，因为我们已经身处于互联网之中。" 
 category: life
 tags: [互联网, 生活]   

@@ -37,7 +37,7 @@ Ruby 和 Objective-C 这两种语言看上去好像天南地北：一种是动�
   
 <a id='message_in_a_bottle' name='message_in_a_bottle'> </a>
 
-##消息的传递
+## 消息的传递
 
 Smalltalk才是实至名归的第一种面向对象语言，它用“从一个对象发送信息给另一个对象”的新概念取代了“调用函数”的旧概念，对后面的语言发展产生了深远的影响。
 
@@ -104,7 +104,7 @@ if ([receiver respondsToSelector:@selector(theMessage:)]) {
 
 <a id='getting_metaer_and_metaer' name='getting_metaer_and_metaer'> </a>
 
-##变得越来越动态
+## 变得越来越动态
 
 如果你想在一个不能修改的类（像系统类）中添加你想要的方法，那么Objective-C里的category一定不会让你失望 -- 很像Ruby中的“开放类”。
 
@@ -177,7 +177,7 @@ Objective-C中的流程是差不多，但我们不是重写`doesNotRecognizeSele
 
 <a id='introspection' name='introspection'> </a>
 
-##内省  
+## 内省  
 
 动态方法决议并不只是像Ruby和Objective-C这样的语言的技术支持。你也可以通过在runtime中用一种有意思的方式去操作这些对象。
 
@@ -189,7 +189,7 @@ Objective-C中的流程是差不多，但我们不是重写`doesNotRecognizeSele
 
 <a id='cashing_in' name='cashing_in'> </a>
 
-##现学现用
+## 现学现用
 
 所有的动态工具都可以用来创建像Core Data这样的东西，Core Data是一个有点像ActiveRecord的持久化对象图。在Core Data中，relationship是“有缺陷的”，也就是说他们只有在被别的对象访问时，才会被加载。每个property的accessor和mutator在runtime中都被重写（使用的就是我们上面提到的动态方法决议）。如果我们访问了一个还没有被加载的对象时，框架就会从持久性储存中动态加载这个对象并将它返回。它保持了内存的低利用率，避免了在任何一个物体被获取时，实体对象图表都要被加载到内存中这样情况的发生。
 
@@ -201,7 +201,7 @@ Objective-C中的流程是差不多，但我们不是重写`doesNotRecognizeSele
 
 <a id='what_is_comepielur' name='what_is_comepielur'> </a>
 
-##什么是编译器？ 
+## 什么是编译器？ 
 
 很明显，Objective-C和Ruby并不是同一种语言，目前为止最大的不同就是Objective-C是一种编译型语言。
 

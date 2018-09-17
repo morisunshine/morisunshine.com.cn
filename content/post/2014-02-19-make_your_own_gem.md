@@ -20,7 +20,7 @@ share: true
 
 <a id='introduce' name='introduce'> </a>
 
-##什么是Gem?
+## 什么是Gem?
 
 
 RubyGems是一个方便而强大的Ruby程序包管理器，Ruby的第三方插件是用gem方式来管理，非常容易发布和共享，一个简单的命令就可以安装上第三方的扩展库。特点：能远程安装包，包之间依赖关系的管理，简单可靠的卸载，查询机制，能查询本地和远程服务器的包信息，能保持一个包的不同版本，基于Web的查看接口，能查看你安装的gem的信息。
@@ -29,7 +29,7 @@ RubyGems是一个方便而强大的Ruby程序包管理器，Ruby的第三方插�
 
 <a id='first_gem' name='first_gem'> </a>
 
-##第一个Gem
+## 第一个Gem
 
 我们要创建一个名叫`moondemo`的gem，首先，就要创建一个名字为`moondemo_yourname`的目录，这个是为了后面的发布，如果你想发布的话，就要检查一下你的gem名字是否已经被人使用了，如果已经被人使用，那就要换个名字了。    
 然后这个目录里的基本文件结构应该是这样的。 
@@ -139,7 +139,7 @@ Parsing documentation for moondemo-0.0.1
 
 <a id='include_more_files' name='include_more_files'> </a>
 
-##包含更多文件
+## 包含更多文件
 
 我们以后代码当然不会这么简单，如果代码变得非常多了之后，该怎么办呢，当然是要是要将代码分到不同的文件中了。  
 比如我们想在刚才的gem中添加根据不同语言来输出不同语言的"Hello world"。  
@@ -217,7 +217,7 @@ end
 
 <a id='adding_an_executable' name='adding_an_executable'> </a>
 
-##添加可执行文件
+## 添加可执行文件
 
 gem除了可以提供Ruby代码库外，还可以在你的可执行文件路径里提供很多可执行可执行文件文件。可能最有名的就是`rake`，
 添加一个可执行可执行可执行文件文件其实很简单，你只需要将你的可执行文件放在你的gem的`bin`目录下，然后在将这个文件添加到`.gemspec`文件中`executables`的列表里就可以了，让我们试一下:
@@ -271,7 +271,7 @@ Hello world!
 
 <a id='writing_tests' name='writing_tests'> </a>
 
-#测试
+# 测试
 
 测试我们的gem是非常重要的，它不仅保证了这个gem是正常的，也保证了别人能知道你的gem是正常的。当我们评价一个gem的时候，很多Ruby开发者会倾向于通过查看测试用例来做为主要依据。
 
@@ -358,7 +358,7 @@ Finished tests in 0.006151s, 487.7256 tests/s, 487.7256 assertions/s.
 
 <a id='documenting_your_code' name='documenting_your_code'> </a>
 
-#文档
+# 文档
 
 文档和测试是一样重要的，大部分gem都是用RDoc来生成文档的，这里有很多[教程](http://docs.seattlerb.org/rdoc/RDoc/Markup.html).
 很简单，先切换到gem的根目录下，再命令行中输入`rdoc`，你就会发现多出了一个名为`doc`的目录，里面就是我们的文档了，当然你可以自己再进行一些调整。

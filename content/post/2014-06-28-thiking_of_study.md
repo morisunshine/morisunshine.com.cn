@@ -10,7 +10,7 @@ share: true
 
 ---
 
-![图片](/images/thinking_of_study.jpg)
+![图片](/media/thinking_of_study.jpg)
 
 >如何更有效地去获取知识?
 

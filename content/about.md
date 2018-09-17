@@ -1,6 +1,7 @@
 ---
 title: "关于"
 date: "2018-09-17T21:48:51-07:00"
+slug: "about"
 ---
 
 > I hear and I forget   
