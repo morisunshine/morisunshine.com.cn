@@ -1,6 +1,6 @@
 ---
 title: "关于"
-date: "2018-09-17T21:48:51-07:00"
+date: "2018-09-17"
 ---
 
 > I hear and I forget   
